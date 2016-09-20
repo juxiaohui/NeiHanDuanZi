@@ -1,0 +1,39 @@
+//
+//  JXHPrefixHeader.pch
+//  NeiHanDuanZi
+//
+//  Created by juxiaohui on 16/9/14.
+//  Copyright © 2016年 juxiaohui. All rights reserved.
+//
+
+
+//**************设置SDK适用的版本*****************
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+
+#endif
+
+//**************所有objective-c文件共享的头文件*****************
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+
+#import <Foundation/Foundation.h>
+
+#import "JXHMacros.h"
+
+#import <AFNetworking.h>
+
+#import <UIImageView+WebCache.h>
+
+#import <MJRefresh.h>
+
+#import <MJExtension.h>
+
+#import "CBNetworking.h"
+
+#endif /* JXHPrefixHeader_pch */
