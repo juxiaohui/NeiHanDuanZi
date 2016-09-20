@@ -16,21 +16,26 @@
 
 
 +(void)initialize{
+    // 设置导航栏背景颜色
+    [UINavigationBar appearance].barTintColor = [UIColor colorWithRed:0.86f green:0.85f blue:0.80f alpha:1.00f];;
     
-    // 设置Bar 的背景和标题属性
-//    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
-//    
-//    NSMutableDictionary *barAttrs = [NSMutableDictionary dictionary];
-//    
-//    barAttrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:18];
-//    
-//    [[UINavigationBar appearance] setTitleTextAttributes:barAttrs];
-//    
+    // 设置导航栏标题文字属性
+    NSMutableDictionary *barAttrs = [NSMutableDictionary dictionary];
+    barAttrs[NSFontAttributeName] =JXHNormalFont(18);
+    barAttrs[NSForegroundColorAttributeName] =  [UIColor colorWithRed:0.42f green:0.33f blue:0.27f alpha:1.00f];
+    [[UINavigationBar appearance] setTitleTextAttributes:barAttrs];
+    
     
     //设置Item的标题属性
+    [[UIBarButtonItem appearance] setTintColor: [UIColor colorWithRed:0.42f green:0.33f blue:0.27f alpha:1.00f]];
+    NSMutableDictionary *itemAttrs = [NSMutableDictionary dictionary];
+    itemAttrs[NSFontAttributeName] = JXHNormalFont(17);
+    itemAttrs[NSForegroundColorAttributeName] =  [UIColor colorWithRed:0.42f green:0.33f blue:0.27f alpha:1.00f];
+    [[UIBarButtonItem appearance]setTitleTextAttributes:itemAttrs forState:UIControlStateNormal];
     
-    //  [UIBarButtonItem appearance]
-    
+    //把背景图和分割线图清空
+    [[UINavigationBar appearance] setShadowImage:[UIImage new]];
+//    [[UINavigationBar appearance] setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
 }
 
 - (void)viewDidLoad {
@@ -43,15 +48,12 @@
     
     if (self.childViewControllers.count >= 1) {
         // 左上角的返回
+    
         UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [backButton setTitle:@"返回" forState:UIControlStateNormal];
-        [backButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [backButton setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
-        [backButton setImage:[UIImage imageNamed:@"navigationButtonReturn"] forState:UIControlStateNormal];
-        [backButton setImage:[UIImage imageNamed:@"navigationButtonReturnClick"] forState:UIControlStateHighlighted];
-        [backButton sizeToFit];
+        [backButton setImage:[UIImage imageNamed:@"leftBackButtonFGNormal"] forState:UIControlStateNormal];
+        backButton.frame = CGRectMake(0, 0, 34, 24);
+        backButton.imageEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
         [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
-        backButton.contentEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
         viewController.hidesBottomBarWhenPushed = YES; // 隐藏底部的工具条
     }

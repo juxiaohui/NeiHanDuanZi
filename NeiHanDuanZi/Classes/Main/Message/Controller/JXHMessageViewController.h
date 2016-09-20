@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JXHMessageViewController : UIViewController
+@interface JXHMessageViewController : UITableViewController
 
 @end

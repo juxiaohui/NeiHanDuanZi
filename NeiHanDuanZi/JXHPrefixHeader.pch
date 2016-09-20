@@ -36,4 +36,6 @@
 
 #import "CBNetworking.h"
 
+#import "JXHConst.h"
+
 #endif /* JXHPrefixHeader_pch */

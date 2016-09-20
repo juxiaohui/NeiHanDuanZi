@@ -26,16 +26,20 @@ JXHSingletonM(JXHTabBarController)
 
 
 +(void)initialize{
-
+    
+     [UITabBar appearance].barTintColor = [UIColor colorWithRed:0.97f green:0.97f blue:0.97f alpha:1.00f];
+    
+//    [[UITabBarItem appearance] setTitlePositionAdjustment:UIOffsetMake(0, 1.5)];
+//    
     NSMutableDictionary * normalDic = [NSMutableDictionary dictionary];
     
-    normalDic[NSForegroundColorAttributeName] = [UIColor grayColor];
+    normalDic[NSForegroundColorAttributeName] = [UIColor colorWithRed:0.62f green:0.62f blue:0.63f alpha:1.00f];
     
-    normalDic[NSFontAttributeName] = [UIFont systemFontOfSize:12];
+    normalDic[NSFontAttributeName] =JXHNormalFont(12);
     
     NSMutableDictionary * selectlDic = [NSMutableDictionary dictionary];
     
-    selectlDic[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
+    selectlDic[NSForegroundColorAttributeName] = [UIColor colorWithRed:0.42f green:0.33f blue:0.27f alpha:1.00f];
     
     [[UITabBarItem appearance] setTitleTextAttributes:normalDic forState:UIControlStateNormal];
     

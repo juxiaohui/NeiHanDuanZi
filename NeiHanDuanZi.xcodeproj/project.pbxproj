@@ -21,6 +21,9 @@
 		B3B5B8331D893C5A0092AB38 /* JXHDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B5B8321D893C5A0092AB38 /* JXHDiscoverViewController.m */; };
 		B3C006031D879459004028F1 /* NeiHanDuanZiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C006021D879459004028F1 /* NeiHanDuanZiTests.m */; };
 		B3C0060E1D879459004028F1 /* NeiHanDuanZiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C0060D1D879459004028F1 /* NeiHanDuanZiUITests.m */; };
+		B3E5C2F81D9120B000B01DFE /* JXHConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E5C2F71D9120B000B01DFE /* JXHConst.m */; };
+		B3E5C2FB1D91340A00B01DFE /* JXHMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E5C2FA1D91340A00B01DFE /* JXHMessageCell.m */; };
+		B3E5C3001D91379A00B01DFE /* JXHCustomEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E5C2FF1D91379A00B01DFE /* JXHCustomEmptyView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,12 @@
 		B3C006091D879459004028F1 /* NeiHanDuanZiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeiHanDuanZiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C0060D1D879459004028F1 /* NeiHanDuanZiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NeiHanDuanZiUITests.m; sourceTree = "<group>"; };
 		B3C0060F1D879459004028F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E5C2F61D9120B000B01DFE /* JXHConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHConst.h; sourceTree = "<group>"; };
+		B3E5C2F71D9120B000B01DFE /* JXHConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHConst.m; sourceTree = "<group>"; };
+		B3E5C2F91D91340A00B01DFE /* JXHMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHMessageCell.h; sourceTree = "<group>"; };
+		B3E5C2FA1D91340A00B01DFE /* JXHMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHMessageCell.m; sourceTree = "<group>"; };
+		B3E5C2FE1D91379A00B01DFE /* JXHCustomEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHCustomEmptyView.h; sourceTree = "<group>"; };
+		B3E5C2FF1D91379A00B01DFE /* JXHCustomEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHCustomEmptyView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +152,8 @@
 		B395AEE31D89188B00645CDF /* Const */ = {
 			isa = PBXGroup;
 			children = (
+				B3E5C2F61D9120B000B01DFE /* JXHConst.h */,
+				B3E5C2F71D9120B000B01DFE /* JXHConst.m */,
 			);
 			path = Const;
 			sourceTree = "<group>";
@@ -302,6 +313,8 @@
 		B395AEF61D89188B00645CDF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B3E5C2F91D91340A00B01DFE /* JXHMessageCell.h */,
+				B3E5C2FA1D91340A00B01DFE /* JXHMessageCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -365,6 +378,8 @@
 			isa = PBXGroup;
 			children = (
 				B3B5B8201D8938090092AB38 /* Controller */,
+				B3E5C2FC1D91376200B01DFE /* Model */,
+				B3E5C2FD1D91376200B01DFE /* View */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -441,6 +456,22 @@
 				B3C0060F1D879459004028F1 /* Info.plist */,
 			);
 			path = NeiHanDuanZiUITests;
+			sourceTree = "<group>";
+		};
+		B3E5C2FC1D91376200B01DFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3E5C2FD1D91376200B01DFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3E5C2FE1D91379A00B01DFE /* JXHCustomEmptyView.h */,
+				B3E5C2FF1D91379A00B01DFE /* JXHCustomEmptyView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E527F49C416DFC1AAC13977F /* Frameworks */ = {
@@ -522,6 +553,7 @@
 				TargetAttributes = {
 					B3C005E41D879459004028F1 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = A283XVT2UF;
 					};
 					B3C005FD1D879459004028F1 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -632,12 +664,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3E5C2F81D9120B000B01DFE /* JXHConst.m in Sources */,
 				B3B5B82D1D893C210092AB38 /* JXHMessageViewController.m in Sources */,
 				B3B5B8331D893C5A0092AB38 /* JXHDiscoverViewController.m in Sources */,
 				B3B5B8271D893ACA0092AB38 /* JXHNavigationController.m in Sources */,
 				B3B5B8301D893C330092AB38 /* JXHCheckViewController.m in Sources */,
 				B3B5B81E1D8936EF0092AB38 /* CBNetworking.m in Sources */,
+				B3E5C3001D91379A00B01DFE /* JXHCustomEmptyView.m in Sources */,
 				B395AF0B1D891A8500645CDF /* AppDelegate.m in Sources */,
+				B3E5C2FB1D91340A00B01DFE /* JXHMessageCell.m in Sources */,
 				B3B5B8231D89387C0092AB38 /* JXHTabBarController.m in Sources */,
 				B3B5B82A1D893C070092AB38 /* JXHHomeViewController.m in Sources */,
 				B395AF131D891A9000645CDF /* main.m in Sources */,
@@ -764,8 +799,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				DEVELOPMENT_TEAM = A283XVT2UF;
 				GCC_PREFIX_HEADER = /Users/luzifei/Desktop/NeiHanDuanZi/NeiHanDuanZi/JXHPrefixHeader.pch;
 				INFOPLIST_FILE = NeiHanDuanZi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = weilingkeji.NeiHanDuanZi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -778,8 +815,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				DEVELOPMENT_TEAM = A283XVT2UF;
 				GCC_PREFIX_HEADER = /Users/luzifei/Desktop/NeiHanDuanZi/NeiHanDuanZi/JXHPrefixHeader.pch;
 				INFOPLIST_FILE = NeiHanDuanZi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = weilingkeji.NeiHanDuanZi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
