@@ -8,6 +8,9 @@
 
 #import "JXHMessageViewController.h"
 #import "JXHMessageCell.h"
+#import "JXHCustomEmptyView.h"
+#import "JXHMessageCoversationViewController.h"
+#import "JXHSystemMessageViewController.h"
 
 @interface JXHMessageViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, copy)NSArray <NSString *>* imageArray;
@@ -72,10 +75,13 @@
 -(void)setupTableView{
 
     self.tableView.backgroundColor = JXHGlobalColor
-    self.tableView.tableFooterView = [[UIView alloc]init];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.contentInset = UIEdgeInsetsMake(JXHMargin-35, 0, 0, 0);
     self.tableView.rowHeight = 50;
+    
+    JXHCustomEmptyView * emptyView = [[JXHCustomEmptyView alloc]initWithTitle:@"hi起来吧" secondTitle:@"去TA的主页就可以发悄悄话了" iconname:@"around"];
+    emptyView.frame = CGRectMake(0, 0, ScreenWidth, 170);
+    self.tableView.tableFooterView = emptyView;
 }
 
 -(void)leftItemClick{
@@ -123,6 +129,17 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    if (indexPath.row==0) {
+        JXHMessageCoversationViewController * messageCoversation = [[JXHMessageCoversationViewController alloc]init];
+        [self.navigationController pushViewController:messageCoversation animated:YES];
+        
+    }else if (indexPath.row==1){
+        JXHSystemMessageViewController * systemMessage = [[JXHSystemMessageViewController alloc]init];
+        [self.navigationController pushViewController:systemMessage animated:YES];
+        
+    }else{
+    
+    }
 }
 /*
 #pragma mark - Navigation

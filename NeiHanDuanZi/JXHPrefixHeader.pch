@@ -38,4 +38,6 @@
 
 #import "JXHConst.h"
 
+#import "UIView+JXHFrame.h"
+
 #endif /* JXHPrefixHeader_pch */

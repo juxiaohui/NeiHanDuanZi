@@ -24,6 +24,15 @@
 		B3E5C2F81D9120B000B01DFE /* JXHConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E5C2F71D9120B000B01DFE /* JXHConst.m */; };
 		B3E5C2FB1D91340A00B01DFE /* JXHMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E5C2FA1D91340A00B01DFE /* JXHMessageCell.m */; };
 		B3E5C3001D91379A00B01DFE /* JXHCustomEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E5C2FF1D91379A00B01DFE /* JXHCustomEmptyView.m */; };
+		B3E5C3031D92204500B01DFE /* UIView+JXHFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E5C3021D92204500B01DFE /* UIView+JXHFrame.m */; };
+		B3E5C3061D92223500B01DFE /* NSString+JXHExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E5C3051D92223500B01DFE /* NSString+JXHExt.m */; };
+		B3E5C3091D9222A200B01DFE /* NSDate+JXHExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E5C3081D9222A200B01DFE /* NSDate+JXHExt.m */; };
+		B3E5C30C1D9222B300B01DFE /* NSCalendar+JXHExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E5C30B1D9222B300B01DFE /* NSCalendar+JXHExt.m */; };
+		B3E5C30F1D92233B00B01DFE /* NSDictionary+JXHLog.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E5C30E1D92233B00B01DFE /* NSDictionary+JXHLog.m */; };
+		B3E5C3121D92262F00B01DFE /* NSAttributedString+JXHExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E5C3111D92262F00B01DFE /* NSAttributedString+JXHExt.m */; };
+		B3E5C3151D922B8C00B01DFE /* JXHMessageCoversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E5C3141D922B8C00B01DFE /* JXHMessageCoversationViewController.m */; };
+		B3E5C3181D922C7400B01DFE /* JXHCustonLoadingAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E5C3171D922C7400B01DFE /* JXHCustonLoadingAnimationView.m */; };
+		B3E5C31B1D9232A200B01DFE /* JXHSystemMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E5C31A1D9232A200B01DFE /* JXHSystemMessageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +91,23 @@
 		B3E5C2FA1D91340A00B01DFE /* JXHMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHMessageCell.m; sourceTree = "<group>"; };
 		B3E5C2FE1D91379A00B01DFE /* JXHCustomEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHCustomEmptyView.h; sourceTree = "<group>"; };
 		B3E5C2FF1D91379A00B01DFE /* JXHCustomEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHCustomEmptyView.m; sourceTree = "<group>"; };
+		B3E5C3011D92204500B01DFE /* UIView+JXHFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JXHFrame.h"; sourceTree = "<group>"; };
+		B3E5C3021D92204500B01DFE /* UIView+JXHFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JXHFrame.m"; sourceTree = "<group>"; };
+		B3E5C3041D92223500B01DFE /* NSString+JXHExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JXHExt.h"; sourceTree = "<group>"; };
+		B3E5C3051D92223500B01DFE /* NSString+JXHExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JXHExt.m"; sourceTree = "<group>"; };
+		B3E5C3071D9222A200B01DFE /* NSDate+JXHExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JXHExt.h"; sourceTree = "<group>"; };
+		B3E5C3081D9222A200B01DFE /* NSDate+JXHExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JXHExt.m"; sourceTree = "<group>"; };
+		B3E5C30A1D9222B300B01DFE /* NSCalendar+JXHExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+JXHExt.h"; sourceTree = "<group>"; };
+		B3E5C30B1D9222B300B01DFE /* NSCalendar+JXHExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+JXHExt.m"; sourceTree = "<group>"; };
+		B3E5C30E1D92233B00B01DFE /* NSDictionary+JXHLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JXHLog.m"; sourceTree = "<group>"; };
+		B3E5C3101D92262F00B01DFE /* NSAttributedString+JXHExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+JXHExt.h"; sourceTree = "<group>"; };
+		B3E5C3111D92262F00B01DFE /* NSAttributedString+JXHExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+JXHExt.m"; sourceTree = "<group>"; };
+		B3E5C3131D922B8C00B01DFE /* JXHMessageCoversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHMessageCoversationViewController.h; sourceTree = "<group>"; };
+		B3E5C3141D922B8C00B01DFE /* JXHMessageCoversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHMessageCoversationViewController.m; sourceTree = "<group>"; };
+		B3E5C3161D922C7400B01DFE /* JXHCustonLoadingAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHCustonLoadingAnimationView.h; sourceTree = "<group>"; };
+		B3E5C3171D922C7400B01DFE /* JXHCustonLoadingAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHCustonLoadingAnimationView.m; sourceTree = "<group>"; };
+		B3E5C3191D9232A200B01DFE /* JXHSystemMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHSystemMessageViewController.h; sourceTree = "<group>"; };
+		B3E5C31A1D9232A200B01DFE /* JXHSystemMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHSystemMessageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +171,17 @@
 		B395AEE21D89188B00645CDF /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				B3E5C3011D92204500B01DFE /* UIView+JXHFrame.h */,
+				B3E5C3021D92204500B01DFE /* UIView+JXHFrame.m */,
+				B3E5C3041D92223500B01DFE /* NSString+JXHExt.h */,
+				B3E5C3051D92223500B01DFE /* NSString+JXHExt.m */,
+				B3E5C3071D9222A200B01DFE /* NSDate+JXHExt.h */,
+				B3E5C3081D9222A200B01DFE /* NSDate+JXHExt.m */,
+				B3E5C30A1D9222B300B01DFE /* NSCalendar+JXHExt.h */,
+				B3E5C30B1D9222B300B01DFE /* NSCalendar+JXHExt.m */,
+				B3E5C30E1D92233B00B01DFE /* NSDictionary+JXHLog.m */,
+				B3E5C3101D92262F00B01DFE /* NSAttributedString+JXHExt.h */,
+				B3E5C3111D92262F00B01DFE /* NSAttributedString+JXHExt.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -177,9 +214,9 @@
 			isa = PBXGroup;
 			children = (
 				B395AEEF1D89188B00645CDF /* Home */,
-				B395AEF31D89188B00645CDF /* Message */,
-				B395AEE71D89188B00645CDF /* Check */,
 				B395AEEB1D89188B00645CDF /* Discover */,
+				B395AEE71D89188B00645CDF /* Check */,
+				B395AEF31D89188B00645CDF /* Message */,
 				B3B5B81F1D8938090092AB38 /* Base */,
 			);
 			path = Main;
@@ -299,6 +336,10 @@
 			children = (
 				B3B5B82B1D893C210092AB38 /* JXHMessageViewController.h */,
 				B3B5B82C1D893C210092AB38 /* JXHMessageViewController.m */,
+				B3E5C3131D922B8C00B01DFE /* JXHMessageCoversationViewController.h */,
+				B3E5C3141D922B8C00B01DFE /* JXHMessageCoversationViewController.m */,
+				B3E5C3191D9232A200B01DFE /* JXHSystemMessageViewController.h */,
+				B3E5C31A1D9232A200B01DFE /* JXHSystemMessageViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -470,6 +511,8 @@
 			children = (
 				B3E5C2FE1D91379A00B01DFE /* JXHCustomEmptyView.h */,
 				B3E5C2FF1D91379A00B01DFE /* JXHCustomEmptyView.m */,
+				B3E5C3161D922C7400B01DFE /* JXHCustonLoadingAnimationView.h */,
+				B3E5C3171D922C7400B01DFE /* JXHCustonLoadingAnimationView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -666,16 +709,25 @@
 			files = (
 				B3E5C2F81D9120B000B01DFE /* JXHConst.m in Sources */,
 				B3B5B82D1D893C210092AB38 /* JXHMessageViewController.m in Sources */,
+				B3E5C3061D92223500B01DFE /* NSString+JXHExt.m in Sources */,
 				B3B5B8331D893C5A0092AB38 /* JXHDiscoverViewController.m in Sources */,
 				B3B5B8271D893ACA0092AB38 /* JXHNavigationController.m in Sources */,
 				B3B5B8301D893C330092AB38 /* JXHCheckViewController.m in Sources */,
+				B3E5C3091D9222A200B01DFE /* NSDate+JXHExt.m in Sources */,
+				B3E5C30F1D92233B00B01DFE /* NSDictionary+JXHLog.m in Sources */,
+				B3E5C3151D922B8C00B01DFE /* JXHMessageCoversationViewController.m in Sources */,
+				B3E5C3181D922C7400B01DFE /* JXHCustonLoadingAnimationView.m in Sources */,
 				B3B5B81E1D8936EF0092AB38 /* CBNetworking.m in Sources */,
+				B3E5C31B1D9232A200B01DFE /* JXHSystemMessageViewController.m in Sources */,
 				B3E5C3001D91379A00B01DFE /* JXHCustomEmptyView.m in Sources */,
+				B3E5C3121D92262F00B01DFE /* NSAttributedString+JXHExt.m in Sources */,
 				B395AF0B1D891A8500645CDF /* AppDelegate.m in Sources */,
 				B3E5C2FB1D91340A00B01DFE /* JXHMessageCell.m in Sources */,
+				B3E5C3031D92204500B01DFE /* UIView+JXHFrame.m in Sources */,
 				B3B5B8231D89387C0092AB38 /* JXHTabBarController.m in Sources */,
 				B3B5B82A1D893C070092AB38 /* JXHHomeViewController.m in Sources */,
 				B395AF131D891A9000645CDF /* main.m in Sources */,
+				B3E5C30C1D9222B300B01DFE /* NSCalendar+JXHExt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,7 +800,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -786,7 +838,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
